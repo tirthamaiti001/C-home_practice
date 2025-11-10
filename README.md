@@ -1,6 +1,6 @@
 #C-Practice
 
-📚 This repository contains my step-by-step learning and practice in C programming language.
+📚 This repository contains my learning and practices in C programming language before my college.
 
 ### ✅ Topics Covered
 - Variables & Data Types
