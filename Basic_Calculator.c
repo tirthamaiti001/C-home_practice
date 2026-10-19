@@ -1,5 +1,4 @@
 #include <stdio.h>
-// Function definitions
 int add(int a, int b) {
     return a + b;
 }
@@ -25,33 +24,24 @@ int calculate(int a, int b, char operation) {
 int main() {
     int a, b;
     char op;
-    // Read 1st input
     if (scanf("%d", &a) != 1) {
         printf("Invalid input\n");
         return 0;
     }
-    // Read operator
     if (scanf(" %c", &op) != 1) {
         printf("Invalid input\n");
         return 0;
     }
-    // Read 2nd input
     if (scanf("%d", &b) != 1) {
         printf("Invalid input\n");
         return 0;
     }
-    // Check for quit command
-    if (op == 'q') {
-        return 0;
-    }
+    if (op == 'q')  return 0;
 
     int result = calculate(a, b, op);
 
-    if (result == -99999) {
-        printf("Invalid input\n");
-    } else {
-        printf("Ans: %d\n", result);
-    }
+    if (result == -99999)   printf("Invalid input\n");
+    else    printf("Ans: %d\n", result);
 
     return 0;
 }
